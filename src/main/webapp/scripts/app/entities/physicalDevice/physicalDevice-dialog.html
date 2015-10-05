@@ -1,0 +1,124 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myPhysicalDeviceLabel">Create or edit a PhysicalDevice</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="physicalDevice.id" readonly>
+        </div>
+        <div class="form-group">
+            <label for="field_deviceModelIdentifier">DeviceModelIdentifier</label>
+            <input type="text" class="form-control" name="deviceModelIdentifier" id="field_deviceModelIdentifier"
+                    ng-model="physicalDevice.deviceModelIdentifier"
+                    >
+        </div>
+        <div class="form-group">
+            <label for="field_deviceModelName">DeviceModelName</label>
+            <input type="text" class="form-control" name="deviceModelName" id="field_deviceModelName"
+                    ng-model="physicalDevice.deviceModelName"
+                    >
+        </div>
+        <div class="form-group">
+            <label for="field_serialNumber">SerialNumber</label>
+            <input type="text" class="form-control" name="serialNumber" id="field_serialNumber"
+                    ng-model="physicalDevice.serialNumber"
+                    >
+        </div>
+        <div class="form-group">
+            <label for="field_paymentCaptureDeviceIdentifier">PaymentCaptureDeviceIdentifier</label>
+            <input type="text" class="form-control" name="paymentCaptureDeviceIdentifier" id="field_paymentCaptureDeviceIdentifier"
+                    ng-model="physicalDevice.paymentCaptureDeviceIdentifier"
+                    >
+        </div>
+        <div class="form-group">
+            <label for="field_gateWayIdentifier">GateWayIdentifier</label>
+            <input type="text" class="form-control" name="gateWayIdentifier" id="field_gateWayIdentifier"
+                    ng-model="physicalDevice.gateWayIdentifier"
+                    >
+        </div>
+        <div class="form-group">
+            <label for="field_partyLevel">PartyLevel</label>
+            <input type="text" class="form-control" name="partyLevel" id="field_partyLevel"
+                    ng-model="physicalDevice.partyLevel"
+                    >
+        </div>
+        <div class="form-group">
+            <label for="field_appliedToPartyIdentifier">AppliedToPartyIdentifier</label>
+            <input type="text" class="form-control" name="appliedToPartyIdentifier" id="field_appliedToPartyIdentifier"
+                    ng-model="physicalDevice.appliedToPartyIdentifier"
+                    >
+        </div>
+        <div class="form-group">
+            <label for="field_partyRoleIdentifier">PartyRoleIdentifier</label>
+            <input type="text" class="form-control" name="partyRoleIdentifier" id="field_partyRoleIdentifier"
+                    ng-model="physicalDevice.partyRoleIdentifier"
+                    >
+        </div>
+        <div class="form-group">
+            <label for="field_partyRoleName">PartyRoleName</label>
+            <input type="text" class="form-control" name="partyRoleName" id="field_partyRoleName"
+                    ng-model="physicalDevice.partyRoleName"
+                    >
+        </div>
+        <div class="form-group">
+            <label for="field_deviceStatusIdentifier">DeviceStatusIdentifier</label>
+            <select class="form-control" name="deviceStatusIdentifier" ng-model="physicalDevice.deviceStatusIdentifier" id="field_deviceStatusIdentifier">
+                <option value="WPStock">WPStock</option>
+                <option value="custAllocated">custAllocated</option>
+                <option value="active">active</option>
+                <option value="faulty">faulty</option>
+                <option value="writeOff">writeOff</option>
+                <option value="returned">returned</option>
+                <option value="withManufact">withManufact</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="field_deviceFirmwareVersion">DeviceFirmwareVersion</label>
+            <input type="text" class="form-control" name="deviceFirmwareVersion" id="field_deviceFirmwareVersion"
+                    ng-model="physicalDevice.deviceFirmwareVersion"
+                    >
+        </div>
+        <div class="form-group">
+            <label for="field_deviceManufacturerIdentifier">DeviceManufacturerIdentifier</label>
+            <input type="text" class="form-control" name="deviceManufacturerIdentifier" id="field_deviceManufacturerIdentifier"
+                    ng-model="physicalDevice.deviceManufacturerIdentifier"
+                    >
+        </div>
+        <div class="form-group">
+            <label for="field_deviceManufacturerName">DeviceManufacturerName</label>
+            <input type="text" class="form-control" name="deviceManufacturerName" id="field_deviceManufacturerName"
+                    ng-model="physicalDevice.deviceManufacturerName"
+                    >
+        </div>
+        <div class="form-group">
+            <label for="field_P2PEComplianceFlag">P2PEComplianceFlag</label>
+            <select class="form-control" name="P2PEComplianceFlag" ng-model="physicalDevice.P2PEComplianceFlag" id="field_P2PEComplianceFlag">
+                <option value="Y">Y</option>
+                <option value="N">N</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="field_deviceOwnershipFlag">DeviceOwnershipFlag</label>
+            <select class="form-control" name="deviceOwnershipFlag" ng-model="physicalDevice.deviceOwnershipFlag" id="field_deviceOwnershipFlag">
+                <option value="W">W</option>
+                <option value="C">C</option>
+            </select>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || editForm.$submitted" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>

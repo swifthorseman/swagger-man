@@ -1,0 +1,142 @@
+
+<div>
+    <h2><span>PhysicalDevice</span> {{physicalDevice.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Field</th>
+                <th>Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span>DeviceModelIdentifier</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{physicalDevice.deviceModelIdentifier}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>DeviceModelName</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{physicalDevice.deviceModelName}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>SerialNumber</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{physicalDevice.serialNumber}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>PaymentCaptureDeviceIdentifier</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{physicalDevice.paymentCaptureDeviceIdentifier}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>GateWayIdentifier</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{physicalDevice.gateWayIdentifier}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>PartyLevel</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{physicalDevice.partyLevel}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>AppliedToPartyIdentifier</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{physicalDevice.appliedToPartyIdentifier}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>PartyRoleIdentifier</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{physicalDevice.partyRoleIdentifier}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>PartyRoleName</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{physicalDevice.partyRoleName}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>DeviceStatusIdentifier</span>
+                </td>
+                <td>
+                    <span class="form-control-static" translate="{{'transpilerApp.DeviceStatusIdentifierEnum.' + physicalDevice.deviceStatusIdentifier}}">{{physicalDevice.deviceStatusIdentifier}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>DeviceFirmwareVersion</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{physicalDevice.deviceFirmwareVersion}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>DeviceManufacturerIdentifier</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{physicalDevice.deviceManufacturerIdentifier}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>DeviceManufacturerName</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{physicalDevice.deviceManufacturerName}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>P2PEComplianceFlag</span>
+                </td>
+                <td>
+                    <span class="form-control-static" translate="{{'transpilerApp.P2PEComplianceFlagEnum.' + physicalDevice.P2PEComplianceFlag}}">{{physicalDevice.P2PEComplianceFlag}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>DeviceOwnershipFlag</span>
+                </td>
+                <td>
+                    <span class="form-control-static" translate="{{'transpilerApp.DeviceOwnershipFlagEnum.' + physicalDevice.deviceOwnershipFlag}}">{{physicalDevice.deviceOwnershipFlag}}</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+</div>
